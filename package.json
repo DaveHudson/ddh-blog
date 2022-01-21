@@ -1,0 +1,34 @@
+{
+  "name": "ddh-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "turbo": {
+    "pipeline": {
+      "dev": {
+        "cache": false
+      },
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "output": [
+          ".next/**",
+          "dist/**"
+        ]
+      }
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pnpm": "^6.27.1",
+    "turbo": "^1.0.28"
+  }
+}
