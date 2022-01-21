@@ -11,6 +11,7 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "deploy:blog": "turbo run build --scope=apps/blog --include-dependencies --no-deps",
     "deploy:docs": "turbo run build --scope=apps/docs --include-dependencies --no-deps",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
