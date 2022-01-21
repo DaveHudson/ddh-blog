@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "workspace": [
-    "apps/docs",
-    "apps/blog",
-    "packages/ui"
+  "workspaces": [
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
     "dev": "turbo run dev",
