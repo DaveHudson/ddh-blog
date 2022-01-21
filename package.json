@@ -5,6 +5,7 @@
   "main": "index.js",
   "workspace": [
     "apps/docs",
+    "apps/blog",
     "packages/ui"
   ],
   "scripts": {
@@ -24,7 +25,8 @@
         ],
         "output": [
           ".next/**",
-          "dist/**"
+          "dist/**",
+          "public/dist/**"
         ]
       }
     }
